@@ -1,4 +1,4 @@
-# MySquadStats Weapon Aggregator
+# Weaponlist cleaner for MySquadStats
 
 A Tampermonkey userscript for [MySquadStats](https://mysquadstats.com) that cleans up massive weapon lists by aggregating variants (scopes, camos, kits) into unified, easy-to-read entries.
 
