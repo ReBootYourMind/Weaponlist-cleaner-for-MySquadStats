@@ -6,7 +6,7 @@ A Tampermonkey userscript for [MySquadStats](https://mysquadstats.com) that clea
 
 ## 🚀 Key Features
 
-* **Smart Aggregation:** Automatically merges weapon variants (e.g., `M4A1 M150`, `M4A1 IronSights`, and `M4A1 Foregrip`) into a single **M4A1** entry.
+* **Smart Aggregation:** Automatically merges weapon variants (e.g., `M4A1 M150 Foregrip`, `M4 Classic`, and `M4 Carryhandle 2Mags`) into a single **M4** entry.
 * **Hover Breakdown:** Hover over any aggregated (green) weapon name to see exactly which variants made up that total and how many wounds each contributed.
 * **Custom Categories:** Groups specific game actions like **Vehicle Destructions**, **Tandem Hits**, and **Frag Grenades** into logical sections.
 * **Smart Exclusions:** Prevents "Frag Projectiles" (like Tank shells) from being mixed into "Frag Grenades."
