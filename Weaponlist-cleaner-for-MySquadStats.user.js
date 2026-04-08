@@ -75,17 +75,17 @@
         "EOTech", "ET552", "EXPS", "Holo", "Ironsight", "IronSights", "M145",
         "M150", "M68", "MGO", "Meupold", "NoOptic", "OKP7", "Optic", "Optics",
         "PSO-1", "QMK171A", "RDS", "Reddot", "Sights", "Scope", "Specter",
-        "SUSAT", "T800", "ZF48", "ZPoint",
+        "SUSAT", "T800", "ZF48", "ZPoint", "QMK171A",
 
         // --- Attachments & Handling ---
         "AK40GL", "Bayonet", "Compensator", "Foregrip", "Frontgrip", "Grippod",
         "M203A1", "NoBipod", "PushCO", "QLG-10", "Semi", "SimonOffense",
-        "SL40", "Wormpool", "Timed",
+        "SL40", "Wormpool", "Timed", "Suppressor", "Suppressed",
 
         // --- Ammo & Tracers ---
         "2Mag", "2mags", "3Mags", "4Mag", "4Mags", "4mags", "5Mags", "6Mag",
         "7mags", "45Rnd", "Drum", "LowAmmo", "Mag58", "Rarden", "Stick",
-        "Tracer", "Red", "Green", "Blue", "Brown", "10mags",
+        "Tracer", "Red", "Green", "Blue", "Brown", "10mags", "ExtendedMag",
 
         // --- Camos & Environment ---
         "2D", "3D", "Arid", "Desert", "Naval", "Snow", "Winter", "Woodland", "Black",
@@ -105,7 +105,7 @@
         "SquadLeader02", "SquadLeader1", "Squadleader2", "Weapon","AT","Light",
 
         // --- Obscure / Technical / Numbers ---
-        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3"
+        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3"," 33rd"
     ];
     //  CSS for Hover Tooltip
     const style = document.createElement('style');
