@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Weaponlist cleaner for MySquadStats
-// @version      2.4
+// @version      2.5
 // @description  Strips multiple suffixes (e.g. "M150" AND "Foregrip") from weapon names, groups some weapons like mines and different variants together, code by Gemini
 // @author       ReBootYourMind
 // @match        *://*.mysquadstats.com/*
@@ -23,6 +23,7 @@
         { keywords: ["Tandem", "NLAW"], groupName: "Tandem AT Hits" },
         { keywords: ["Ammocook"], groupName: "Ammorack explosions" },
         { keywords: ["Mine"], groupName: "AT Mines" },
+        { keywords: ["Soldier","Soldiers"], groupName: "Soldier" },
         {
             keywords: ["Frag"],
             groupName: "Frag Grenades",
