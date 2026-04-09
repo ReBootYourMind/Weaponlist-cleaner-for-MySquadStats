@@ -83,7 +83,7 @@
         "M150", "M68", "MGO", "Meupold", "NoOptic", "OKP7", "Optic", "Optics",
         "PSO-1", "QMK171A", "RDS", "Reddot", "Sights", "Scope", "Specter",
         "SUSAT", "T800", "ZF48", "ZPoint", "QMK171A", "OKP-7", "QMK-191",
-        "M1A", "Yoloson"
+        "M1A", "Yoloson", "M68",
 
         // --- Attachments & Handling ---
         "AK40GL", "Bayonet", "Compensator", "Foregrip", "Frontgrip", "Grippod",
