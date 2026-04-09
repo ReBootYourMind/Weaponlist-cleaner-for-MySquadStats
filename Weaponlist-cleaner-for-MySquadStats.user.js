@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Weaponlist cleaner for MySquadStats
-// @version      2.5
+// @version      2.6
 // @description  Strips multiple suffixes (e.g. "M150" AND "Foregrip") from weapon names, groups some weapons like mines and different variants together, code by Gemini
 // @author       ReBootYourMind
 // @match        *://*.mysquadstats.com/*
@@ -24,6 +24,8 @@
         { keywords: ["Ammocook"], groupName: "Ammorack explosions" },
         { keywords: ["Mine"], groupName: "AT Mines" },
         { keywords: ["Soldier","Soldiers"], groupName: "Soldier" },
+        { keywords: ["Bayonet2000","SA80Bayonet","AKMBayonet","Knife"], groupName: "Knifes" },
+        { keywords: ["C4","Explosive","Explosives","C4Explosive","TNT","Bangerite","IED"], groupName: "Deployable Explosive" },
         {
             keywords: ["Frag"],
             groupName: "Frag Grenades",
@@ -38,6 +40,7 @@
     // =========================================================
     const weaponGroupMap = {
         "M4A1":"M4",
+        "M4M203":"M4",
         "M16A4":"M16",
         "M16A2M203":"M16",
         "M16A2":"M16",
@@ -48,6 +51,7 @@
         "G3A7":"G3",
         "G3Bayonet":"G3",
         "G3SG1":"G3",
+        "G3A3HK79":"G3",
         "AK74Bayonet":"AK74",
         "AK74M":"AK74",
         "AKS74U":"AK74",
@@ -63,7 +67,9 @@
         "Soldiers":"Soldier",
         "40MM MK19":"40MM",
         "40MM VOG":"40MM",
-        "AGS30 40MM VOG":"40MM"
+        "AGS30 40MM VOG":"40MM",
+        "AK74MGP25":"AK74",
+        "New AK74":"AK74"
     };
 
     // =========================================================
@@ -76,17 +82,19 @@
         "EOTech", "ET552", "EXPS", "Holo", "Ironsight", "IronSights", "M145",
         "M150", "M68", "MGO", "Meupold", "NoOptic", "OKP7", "Optic", "Optics",
         "PSO-1", "QMK171A", "RDS", "Reddot", "Sights", "Scope", "Specter",
-        "SUSAT", "T800", "ZF48", "ZPoint", "QMK171A",
+        "SUSAT", "T800", "ZF48", "ZPoint", "QMK171A", "OKP-7", "QMK-191",
+        "M1A", "M68", "Yoloson"
 
         // --- Attachments & Handling ---
         "AK40GL", "Bayonet", "Compensator", "Foregrip", "Frontgrip", "Grippod",
         "M203A1", "NoBipod", "PushCO", "QLG-10", "Semi", "SimonOffense",
-        "SL40", "Wormpool", "Timed", "Suppressor", "Suppressed",
+        "SL40", "Wormpool", "Timed", "Suppressor", "Suppressed", "Bipod",
 
         // --- Ammo & Tracers ---
         "2Mag", "2mags", "3Mags", "4Mag", "4Mags", "4mags", "5Mags", "6Mag",
         "7mags", "45Rnd", "Drum", "LowAmmo", "Mag58", "Rarden", "Stick",
         "Tracer", "Red", "Green", "Blue", "Brown", "10mags", "ExtendedMag",
+        "9Mag", "9mags", "Cmag", "1mag",
 
         // --- Camos & Environment ---
         "2D", "3D", "Arid", "Desert", "Naval", "Snow", "Winter", "Woodland", "Black",
@@ -106,7 +114,7 @@
         "SquadLeader02", "SquadLeader1", "Squadleader2", "Weapon","AT","Light",
 
         // --- Obscure / Technical / Numbers ---
-        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3"," 33rd"
+        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3"," 33rd","DMR","Pro"
     ];
     //  CSS for Hover Tooltip
     const style = document.createElement('style');
