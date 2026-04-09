@@ -69,7 +69,8 @@
         "40MM VOG":"40MM",
         "AGS30 40MM VOG":"40MM",
         "AK74MGP25":"AK74",
-        "New AK74":"AK74"
+        "New AK74":"AK74",
+        "L85A2AG36":"L85A2"
     };
 
     // =========================================================
@@ -111,10 +112,10 @@
         "Marskman", "Medic", "Medic01", "Medic1", "Pilot", "Pro", "Raider",
         "Raider01", "Rifle", "Rifleman", "Rifleman1", "Rifleman2", "Rifleman5",
         "Rifleman6", "Sapper", "SL", "SLCrewman", "Sniper", "SquadLeader", "SquadLeader01",
-        "SquadLeader02", "SquadLeader1", "Squadleader2", "Weapon","AT","Light",
+        "SquadLeader02", "SquadLeader1", "Squadleader2", "Weapon","AT","Light","Recruit",
 
         // --- Obscure / Technical / Numbers ---
-        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3"," 33rd","DMR","Pro"
+        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3","33rd","DMR","Pro","LDS"
     ];
     //  CSS for Hover Tooltip
     const style = document.createElement('style');
