@@ -23,7 +23,7 @@
         { keywords: ["Tandem", "NLAW"], groupName: "Tandem AT Hits" },
         { keywords: ["Ammocook"], groupName: "Ammorack explosions" },
         { keywords: ["Mine"], groupName: "AT Mines" },
-        { keywords: ["Soldier","Soldiers"], groupName: "Soldier" },
+        { keywords: ["Soldier","Soldiers"], groupName: "Soldier bled to death" },
         { keywords: ["Bayonet2000","SA80Bayonet","AKMBayonet","Knife"], groupName: "Knifes" },
         { keywords: ["C4","Explosive","Explosives","C4Explosive","TNT","Bangerite","IED"], groupName: "Deployable Explosive" },
         {
@@ -76,7 +76,8 @@
         "AGS30 40MM VOG":"40MM",
         "AK74MGP25":"AK74",
         "New AK74":"AK74",
-        "L85A2AG36":"L85A2"
+        "L85A2AG36":"L85A2",
+        "EF88C":"EF88"
     };
 
     // =========================================================
