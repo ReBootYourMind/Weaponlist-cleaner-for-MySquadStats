@@ -30,9 +30,14 @@
             keywords: ["Frag"],
             groupName: "Frag Grenades",
             exclude: ["Projectile", "125mm", "RPG", "SPG", "100mm", "73mm", "og9v", "120mm","BMD4M","ZBL08","76MM"]
-        }
-        // Add more: { keywords: ["Logi", "Truck"], groupName: "Logistics Vehicles" },
+        },
+        { keywords: [" AP"], groupName: "Autocannon AP rounds" },
+        { keywords: ["CROWS M2","EnforcerRWS M2","AAVP7A1 M2","PMV RWS M2","M1117 M2","M1A1 USMC Cmdr M2","CobraRWS M2","SancakRWS M2","50Cal M1151"], groupName: "Vehicle M2" },
+        { keywords: ["Kord Tigr","Kord Safir","Kord BTR-D","Kord Kozak","Kord Cupola"], groupName: "Vehicle Kord",},
+        { keywords: ["M252 HE"], groupName: "25mm HE" },
+        { keywords: ["PKT"], groupName: "Vehicle PKT" }
     ];
+        // Add more: { keywords: ["Logi", "Truck"], groupName: "Logistics Vehicles" },
 
     // =========================================================
     // 1. WEAPON ALIASES (Grouping variants into a master name)
@@ -40,6 +45,7 @@
     // =========================================================
     const weaponGroupMap = {
         "M4A1":"M4",
+        "M4 Classic Fajr":"M4",
         "M4M203":"M4",
         "M16A4":"M16",
         "M16A2M203":"M16",
