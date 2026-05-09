@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Weaponlist cleaner for MySquadStats
-// @version      2.8
+// @version      2.9
 // @description  Strips multiple suffixes (e.g. "M150" AND "Foregrip") from weapon names, groups some weapons like mines and different variants together, code by Gemini
 // @author       ReBootYourMind
 // @match        *://*.mysquadstats.com/*
@@ -32,10 +32,11 @@
             exclude: ["Projectile", "125mm", "RPG", "SPG", "100mm", "73mm", "og9v", "120mm","BMD4M","ZBL08","76MM"]
         },
         { keywords: [" AP"], groupName: "Autocannon AP rounds" },
-        { keywords: ["CROWS M2","EnforcerRWS M2","AAVP7A1 M2","PMV RWS M2","M1117 M2","M1A1 USMC Cmdr M2","CobraRWS M2","SancakRWS M2","50Cal M1151"], groupName: "Vehicle M2" },
-        { keywords: ["Kord Tigr","Kord Safir","Kord BTR-D","Kord Kozak","Kord Cupola"], groupName: "Vehicle Kord",},
+        { keywords: ["CROWS M2","EnforcerRWS M2","AAVP7A1 M2","PMV RWS M2","M1117 M2","M1A1 USMC Cmdr M2","CobraRWS M2","SancakRWS M2","50Cal M1151","M2 RHIB","OpenTurret M2"], groupName: "Vehicle M2" },
+        { keywords: ["Kord Tigr","Kord Safir","Kord BTR-D","Kord Kozak","Kord Cupola","Arbalet Kord"], groupName: "Vehicle Kord",},
         { keywords: ["M252 HE"], groupName: "25mm HE" },
-        { keywords: ["PKT"], groupName: "Vehicle PKT" }
+        { keywords: ["PKT"], groupName: "Vehicle PKT" },
+        { keywords: ["KPVT"], groupName: "Vehicle KPVT" }
     ];
         // Add more: { keywords: ["Logi", "Truck"], groupName: "Logistics Vehicles" },
 
@@ -62,6 +63,7 @@
         "AK74M":"AK74",
         "AKS74U":"AK74",
         "AKS74":"AK74",
+        "AK74GP25":"AK74",
         "C14":"C14 Timberwolf",
         "TW 338 SWS":"C14 Timberwolf",
         "AK12GP25":"AK12",
@@ -77,7 +79,11 @@
         "AK74MGP25":"AK74",
         "New AK74":"AK74",
         "L85A2AG36":"L85A2",
-        "EF88C":"EF88"
+        "EF88C":"EF88",
+        "AKMGP25":"AKM",
+        "AKMS":"AKM",
+        "RPK74M":"RPK",
+        "RPK74":"RPK"
     };
 
     // =========================================================
