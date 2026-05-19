@@ -24,7 +24,7 @@
         { keywords: ["Ammocook"], groupName: "Ammorack explosions" },
         { keywords: ["Mine"], groupName: "AT Mines" },
         { keywords: ["Soldier","Soldiers"], groupName: "Soldier bled to death" },
-        { keywords: ["Bayonet2000","SA80Bayonet","AKMBayonet","Knife"], groupName: "Knifes" },
+        { keywords: ["Bayonet2000","SA80Bayonet","AKMBayonet","Knife","M9Bayonet"], groupName: "Knifes" },
         { keywords: ["C4","Explosive","Explosives","C4Explosive","TNT","Bangerite","IED"], groupName: "Deployable Explosive" },
         {
             keywords: ["Frag"],
@@ -32,7 +32,7 @@
             exclude: ["Projectile", "125mm", "RPG", "SPG", "100mm", "73mm", "og9v", "120mm","BMD4M","ZBL08","76MM"]
         },
         { keywords: [" AP"], groupName: "Autocannon AP rounds" },
-        { keywords: ["CROWS M2","EnforcerRWS M2","AAVP7A1 M2","PMV RWS M2","M1117 M2","M1A1 USMC Cmdr M2","CobraRWS M2","SancakRWS M2","50Cal M1151","M2 RHIB","OpenTurret M2"], groupName: "Vehicle M2" },
+        { keywords: ["CROWS M2","EnforcerRWS M2","AAVP7A1 M2","PMV RWS M2","M1117 M2","M1A1 USMC Cmdr M2","CobraRWS M2","SancakRWS M2","50Cal M1151","M2 RHIB","OpenTurret M2","M1A1 FLEX M2"], groupName: "Vehicle M2" },
         { keywords: ["Kord Tigr","Kord Safir","Kord BTR-D","Kord Kozak","Kord Cupola","Arbalet Kord"], groupName: "Vehicle Kord",},
         { keywords: ["M252 HE"], groupName: "25mm HE" },
         { keywords: ["PKT"], groupName: "Vehicle PKT" },
@@ -97,7 +97,7 @@
         "M150", "M68", "MGO", "Meupold", "NoOptic", "OKP7", "Optic", "Optics",
         "PSO-1", "QMK171A", "RDS", "Reddot", "Sights", "Scope", "Specter",
         "SUSAT", "T800", "ZF48", "ZPoint", "QMK171A", "OKP-7", "QMK-191",
-        "M1A", "Yoloson", "M68",
+        "M1A", "Yoloson", "M68", "M203",
 
         // --- Attachments & Handling ---
         "AK40GL", "Bayonet", "Compensator", "Foregrip", "Frontgrip", "Grippod",
@@ -128,7 +128,7 @@
         "SquadLeader02", "SquadLeader1", "Squadleader2", "Weapon","AT","Light","Recruit",
 
         // --- Obscure / Technical / Numbers ---
-        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3","33rd","DMR","Pro","LDS"
+        "AR", "Classic", "HNA", "Proj", "Proj2", "gun", "01", "02", "03", "03a", "2", "3","33rd","DMR","Pro","LDS","Pip"
     ];
     //  CSS for Hover Tooltip
     const style = document.createElement('style');
